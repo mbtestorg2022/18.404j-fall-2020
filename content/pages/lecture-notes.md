@@ -4,31 +4,414 @@ title: Lecture Notes
 uid: df711905-1b1b-43e5-65ea-6ab014405e75
 ---
 
-| LEC # | TOPICS | PDF | PPT |
-| --- | --- | --- | --- |
-| 1 | Introduction, Finite Automata, Regular Expressions | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec1-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec1)) |
-| 2 | Nondeterminism, Closure Properties, Regular Expressions → Finite Automata | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec2-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec2)) |
-| 3 | The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec3-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec3)) |
-| 4 | Pushdown Automata, CFG ↔ PDA | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec4-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec4)) |
-| 5 | The CF Pumping Lemma, Turing Machines | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec5-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec5)) |
-| 6 | TM Variants, the Church-Turing Thesis | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec6-1)) | ([PPT - 2.4MB]({{< baseurl >}}/resources/mit18_404f20_lec6)) |
-| 7 | Decision Problems for Automata and Grammars | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec7-1)) | ([PPT - 1.9MB]({{< baseurl >}}/resources/mit18_404f20_lec7)) |
-| 8 | Undecidability | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec8-1)) | ([PPT - 1.2MB]({{< baseurl >}}/resources/mit18_404f20_lec8)) |
-| 9 | Reducibility | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec9-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec9)) |
-| 10 | The Computation History Method | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec10-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec10)) |
-| 11 | The Recursion Theorem and Logic | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec11-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec11)) |
-| 12 | Time Complexity | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec12-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec12)) |
-| 13 | Midterm Exam \[no lecture\] | &nbsp; |
-| 14 | P and NP, SAT, Poly-time Reducibility | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec14-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec14)) |
-| 15 | NP-Completeness | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec15-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec15)) |
-| 16 | Cook-Levin Theorem | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec16-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec16)) |
-| 17 | Space Complexity, PSPACE, Savitch's Theorem | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec17-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec17)) |
-| 18 | PSPACE-Completeness | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec18-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec18)) |
-| 19 | Games, Generalized Geography | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec19-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec19)) |
-| 20 | L and NL, NL = coNL | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec20-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec20)) |
-| 21 | Hierarchy Theorems | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec21-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec21)) |
-| 22 | Provably Intractable Problems, Oracles | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec22-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec22)) |
-| 23 | Probabilistic Computation, BPP | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec23-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec23)) |
-| 24 | Probabilistic Computation (cont.) | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec24-1)) | ([PPT]({{< baseurl >}}/resources/mit18_404f20_lec24)) |
-| 25 | Interactive Proof Systems, IP | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec25-1)) | ([PPT - 3.4MB]({{< baseurl >}}/resources/mit18_404f20_lec25)) |
-| 26 | coNP ⊆ IP | ([PDF]({{< baseurl >}}/resources/mit18_404f20_lec26-1)) | ([PPT - 1.1MB]({{< baseurl >}}/resources/mit18_404f20_lec26))
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+LEC #
+{{< thclose >}}
+{{< thopen >}}
+TOPICS
+{{< thclose >}}
+{{< thopen >}}
+PDF
+{{< thclose >}}
+{{< thopen >}}
+PPT
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+1
+{{< tdclose >}}
+{{< tdopen >}}
+Introduction, Finite Automata, Regular Expressions
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec1-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec1))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+2
+{{< tdclose >}}
+{{< tdopen >}}
+Nondeterminism, Closure Properties, Regular Expressions → Finite Automata
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec2-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec2))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+3
+{{< tdclose >}}
+{{< tdopen >}}
+The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec3-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec3))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+4
+{{< tdclose >}}
+{{< tdopen >}}
+Pushdown Automata, CFG ↔ PDA
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec4-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec4))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+{{< tdopen >}}
+The CF Pumping Lemma, Turing Machines
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec5-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec5))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+{{< tdopen >}}
+TM Variants, the Church-Turing Thesis
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec6-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT - 2.4MB]({{< baseurl >}}/resources/mit18_404f20_lec6))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+{{< tdopen >}}
+Decision Problems for Automata and Grammars
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec7-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT - 1.9MB]({{< baseurl >}}/resources/mit18_404f20_lec7))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+8
+{{< tdclose >}}
+{{< tdopen >}}
+Undecidability
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec8-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT - 1.2MB]({{< baseurl >}}/resources/mit18_404f20_lec8))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+9
+{{< tdclose >}}
+{{< tdopen >}}
+Reducibility
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec9-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec9))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+{{< tdopen >}}
+The Computation History Method
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec10-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec10))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+11
+{{< tdclose >}}
+{{< tdopen >}}
+The Recursion Theorem and Logic
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec11-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec11))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+12
+{{< tdclose >}}
+{{< tdopen >}}
+Time Complexity
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec12-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec12))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+13
+{{< tdclose >}}
+{{< tdopen >}}
+Midterm Exam \[no lecture\]
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+14
+{{< tdclose >}}
+{{< tdopen >}}
+P and NP, SAT, Poly-time Reducibility
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec14-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec14))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+15
+{{< tdclose >}}
+{{< tdopen >}}
+NP-Completeness
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec15-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec15))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+16
+{{< tdclose >}}
+{{< tdopen >}}
+Cook-Levin Theorem
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec16-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec16))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+17
+{{< tdclose >}}
+{{< tdopen >}}
+Space Complexity, PSPACE, Savitch's Theorem
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec17-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec17))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+18
+{{< tdclose >}}
+{{< tdopen >}}
+PSPACE-Completeness
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec18-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec18))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+19
+{{< tdclose >}}
+{{< tdopen >}}
+Games, Generalized Geography
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec19-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec19))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+{{< tdopen >}}
+L and NL, NL = coNL
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec20-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec20))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+21
+{{< tdclose >}}
+{{< tdopen >}}
+Hierarchy Theorems
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec21-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec21))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+22
+{{< tdclose >}}
+{{< tdopen >}}
+Provably Intractable Problems, Oracles
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec22-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec22))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+23
+{{< tdclose >}}
+{{< tdopen >}}
+Probabilistic Computation, BPP
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec23-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec23))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+24
+{{< tdclose >}}
+{{< tdopen >}}
+Probabilistic Computation (cont.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec24-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT]({{< baseurl >}}/resources/mit18_404f20_lec24))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+25
+{{< tdclose >}}
+{{< tdopen >}}
+Interactive Proof Systems, IP
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec25-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT - 3.4MB]({{< baseurl >}}/resources/mit18_404f20_lec25))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+26
+{{< tdclose >}}
+{{< tdopen >}}
+coNP ⊆ IP
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/mit18_404f20_lec26-1))
+{{< tdclose >}}
+{{< tdopen >}}
+([PPT - 1.1MB]({{< baseurl >}}/resources/mit18_404f20_lec26))
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
