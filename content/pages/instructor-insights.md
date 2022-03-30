@@ -73,8 +73,8 @@ Curriculum Information
 
 ### Prerequisites
 
-*   [_6.042J Mathematics for Computer Science_](/courses/6-042j-mathematics-for-computer-science-spring-2015/)
-*   _[18.200 Principles of Discrete Applied Mathematics](/courses/18-310-principles-of-discrete-applied-mathematics-fall-2013/)_
+*   [_6.042J Mathematics for Computer Science_](/courses/6-042j-mathematics-for-computer-science-spring-2015)
+*   _[18.200 Principles of Discrete Applied Mathematics](/courses/18-310-principles-of-discrete-applied-mathematics-fall-2013)_
 
 ### Requirements Satisfied
 
